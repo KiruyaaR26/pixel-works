@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridho Pixel Works | Indie Studio</title>
+    <!-- HTML Favicon[span_7](start_span)[span_7](end_span) -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- HTML CSS[span_8](start_span)[span_8](end_span) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="halaman-utama">
+    <!-- HEADER -->
+    <div id="header-web">
+        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
+        <h1>Ridho Pixel Works</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
+    </div>
+    <!-- NAVIGASI MENU (HTML Lists, HTML Links, CSS Dropdown)[span_0](start_span)[span_0](end_span) -->
+    <div id="navigasi">
+        <ul class="menu-utama">
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="menu-dropdown">
+                <!-- REVISI 1: href diubah menjadi "#" agar tidak pindah halaman saat diklik -->
+                <a href="#">About &#9662;</a>
+                
+                <ul class="isi-dropdown">
+                    <!-- REVISI 2: Mengarah ke 2 file HTML yang terpisah -->
+                    <li><a href="profil.html">Profil Studio</a></li>
+                    <li><a href="visi.html">Visi & Misi</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Beta Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="wadah-konten">
+        <div class="konten-penuh">
+            <h2 style="color: #e94560;">Hubungi Kami (Contact Us)</h2>
+            <p>Silakan hubungi kami untuk kerja sama bisnis, komisi gambar pixel art, atau laporan bug game.</p>
+            
+            <!-- Info Kontak -->
+            <p>
+                <strong>Email:</strong> ridho@pixelworks.com<br>
+                <strong>GitHub:</strong> <a href="https://github.com/ridho-pixel" style="color: #e94560;">github.com/ridho-pixel</a>
+            </p>
+
+            <hr style="border: 1px solid #0f3460; margin: 20px 0;">
+
+            <!-- HTML Forms -->
+            <form action="mailto:ridho@pixelworks.com" method="post" enctype="text/plain">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="Nama" required>
+
+                <label for="email">Email Anda:</label>
+                <input type="email" id="email" name="Email" required>
+
+                <label for="institusi">Institusi / Perusahaan:</label>
+                <input type="text" id="institusi" name="Institusi">
+
+                <label for="pesan">Pesan Anda:</label>
+                <textarea id="pesan" name="Pesan" rows="5" required></textarea>
+
+                <input type="submit" value="Kirim Pesan Sekarang">
+            </form>
+        </div>
+    </div>
+    <div id="footer-web">
+        <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
+        <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

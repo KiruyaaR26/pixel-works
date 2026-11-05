@@ -1,0 +1,229 @@
+/* =========================================
+   RESET & BASE STYLES (Performance & SEO Optimized)
+   ========================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Menggunakan font sistem agar load time 0ms (Mendukung Performance 100%) */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0f172a; /* Slate Dark / Court Background */
+    color: #f8fafc; /* High contrast text untuk Accessibility 100% */
+    line-height: 1.6;
+}
+
+/* =========================================
+   1. NAVIGATION (#satu & .dua)
+   ========================================= */
+#satu {
+    background-color: #1e293b;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 3px solid #22c55e; /* Aksi hijau lapangan */
+}
+
+.dua {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dua li {
+    display: inline-block;
+    position: relative;
+}
+
+.dua li a {
+    display: block;
+    padding: 12px 20px;
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dua li a:hover, .dua li a:focus {
+    background-color: #22c55e;
+    color: #0f172a;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #1e293b;
+    min-width: 200px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #334155;
+    z-index: 99;
+    text-align: left;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 12px 16px;
+    color: #f8fafc;
+}
+
+.dropdown li a:hover {
+    background-color: #22c55e;
+    color: #0f172a;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+/* =========================================
+   2. TEKS BERJALAN (.text)
+   ========================================= */
+.text {
+    background-color: #22c55e;
+    color: #0f172a;
+    padding: 10px;
+    font-weight: bold;
+    outline: 2px dashed #ffffff;
+    outline-offset: -3px;
+}
+
+/* =========================================
+   3. HERO SECTION (#tiga)
+   ========================================= */
+#tiga {
+    background-color: #1e293b;
+    /* Pastikan gambar latar sudah dikompres agar performa 100% */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('images/md.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    border-bottom: 4px solid #22c55e;
+}
+
+#tiga h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   4. LAYOUT UTAMA (#main, #left, #right)
+   ========================================= */
+#main {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#left, #right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#left {
+    width: 67%; 
+    margin-right: 2%;  
+}
+
+#right {
+    width: 31%; 
+}
+
+/* =========================================
+   5. KOTAK KONTEN (.enam, .delapan)
+   ========================================= */
+.enam, .delapan {
+    background-color: #1e293b; 
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #334155; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.enam h2, .delapan h2 {
+    color: #22c55e;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* =========================================
+   6. TOMBOL & FORM (.btn)
+   ========================================= */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #22c55e;  
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #22c55e;
+}
+
+/* =========================================
+   7. FOOTER (.footer)
+   ========================================= */
+.footer {
+    background-color: #1e293b;
+    color: #f8fafc;
+    text-align: center;
+    padding: 25px;
+    border-top: 4px solid #22c55e;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.footer a {
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Fix untuk Mobile */
+@media (max-width: 768px) {
+    #left, #right {
+        width: 100%;
+        margin-right: 0;
+    }
+}

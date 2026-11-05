@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlog #1 - Ridho Pixel Works</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="halaman-artikel">
+
+    <!-- HEADER (Disamakan dengan index.html) -->
+    <div id="header-web">
+        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
+        <h1>Ridho Pixel Works</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
+    </div>
+
+    <!-- NAVIGASI MENU (HTML Lists, HTML Links, CSS Dropdown)[span_0](start_span)[span_0](end_span) -->
+    <div id="navigasi">
+        <ul class="menu-utama">
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="menu-dropdown">
+                <!-- REVISI 1: href diubah menjadi "#" agar tidak pindah halaman saat diklik -->
+                <a href="#">About &#9662;</a>
+                
+                <ul class="isi-dropdown">
+                    <!-- REVISI 2: Mengarah ke 2 file HTML yang terpisah -->
+                    <li><a href="profil.html">Profil Studio</a></li>
+                    <li><a href="visi.html">Visi & Misi</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Beta Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="wadah-konten">
+        <!-- Main Body Kiri -->
+        <div id="main-body" class="blok-layout">
+            <div class="artikel-post">
+                <h2 style="color: #e94560;">Devlog #1: Desain Karakter Utama & Tileset Desa</h2>
+                <p class="meta-teks">Ditulis oleh Muhammad Ridho pada 4 November 2026</p>
+                <hr style="border: 1px solid #0f3460; margin: 15px 0;">
+                
+                <!-- Gambar Artikel -->
+                <img src="assets/char1.jpg" alt="Preview Desain Karakter" class="gambar-artikel">
+                
+                <p>Proses pembuatan aset 2D menggunakan <strong>Pixelorama</strong> di sistem operasi Linux berjalan sangat lancar. Tantangan terbesar minggu ini adalah menyesuaikan palet warna agar cocok dengan tema perkebunan dan alam bebas.</p>
+                
+                <p>Saya menggunakan batasan warna (color restriction) khas konsol 16-bit untuk memberikan efek nostalgia. Untuk bagian animasi berjalan (walk cycle), saya membuat 4 frame dasar: diam, kaki kanan melangkah, diam, dan kaki kiri melangkah.</p>
+
+                <p>Selanjutnya, saya akan mulai menggambar tekstur tanah yang bisa dicangkul (tilled soil) dan transisi warna rumput ke tanah liat.</p>
+                
+                <a href="index.html" class="tombol-baca">&laquo; Kembali ke Beranda</a>
+            </div>
+        </div>
+
+        <!-- Sidebar Kanan -->
+        <div id="sidebar" class="blok-layout">
+            <div class="widget-kotak">
+                <h3>Tentang Penulis</h3>
+                <p>Solo dev yang mencintai pixel art, kopi, dan modding game.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER LENGKAP -->
+    <div id="footer-web">
+        <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
+        <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+    </div>
+
+</body>
+</html>

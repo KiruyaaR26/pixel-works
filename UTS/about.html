@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridho Pixel Works | Indie Studio</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="halaman-utama">
+
+    <!-- HEADER -->
+    <div id="header-web">
+        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
+        <h1>Ridho Pixel Works</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
+    </div>
+
+    <!-- NAVIGASI MENU (HTML Lists, HTML Links, CSS Dropdown)[span_0](start_span)[span_0](end_span) -->
+    <div id="navigasi">
+        <ul class="menu-utama">
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="menu-dropdown">
+                <!-- REVISI 1: href diubah menjadi "#" agar tidak pindah halaman saat diklik -->
+                <a href="#">About &#9662;</a>
+                
+                <ul class="isi-dropdown">
+                    <!-- REVISI 2: Mengarah ke 2 file HTML yang terpisah -->
+                    <li><a href="profil.html">Profil Studio</a></li>
+                    <li><a href="visi.html">Visi & Misi</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Beta Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="wadah-konten">
+        <div class="konten-penuh">
+            <!-- HTML Headings & Paragraphs -->
+            <h2 id="profil" style="color: #e94560;">Profil Studio</h2>
+            <p>Ridho Pixel Works adalah studio game independen (Indie) yang berfokus pada pembuatan game bergenre RPG dan simulasi pertanian bergaya retro 16-bit.</p>
+
+            <h2 id="sejarah" style="color: #e94560; border-top: 1px solid #0f3460; padding-top: 15px;">Sejarah Lembaga</h2>
+            <p>Didirikan pada tahun 2026 oleh Muhammad Ridho Nur Islam, berawal dari hobi menggambar aset pixel art menggunakan Pixelorama dan modding game Stardew Valley di sistem operasi Linux.</p>
+
+            <h2 id="visi" style="color: #e94560; border-top: 1px solid #0f3460; padding-top: 15px;">Visi dan Misi</h2>
+            <!-- HTML Lists -->
+            <ul>
+                <li><strong>Visi:</strong> Menjadi pelopor pengembang game indie bernuansa budaya lokal di Indonesia.</li>
+                <li><strong>Misi 1:</strong> Memproduksi aset pixel art berkualitas tinggi.</li>
+                <li><strong>Misi 2:</strong> Mengedukasi komunitas tentang penggunaan Godot Engine (GDScript).</li>
+            </ul>
+
+            <h2 style="color: #e94560; border-top: 1px solid #0f3460; padding-top: 15px;">Struktur Organisasi</h2>
+            <!-- HTML Tables Dasar -->
+            <table width="100%" border="1" style="border-collapse: collapse; border-color: #0f3460; text-align: left;">
+                <tr style="background-color: #0f3460;">
+                    <th style="padding: 10px;">Jabatan</th>
+                    <th style="padding: 10px;">Nama</th>
+                    <th style="padding: 10px;">Tugas Utama</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Solo Developer & Founder</td>
+                    <td style="padding: 10px;">M. Ridho N. I.</td>
+                    <td style="padding: 10px;">Programming, Art Design, dan Management</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+ <div id="footer-web">
+     <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
+     <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+ </div>
+ 
+ <!-- Javascript File[span_24](start_span)[span_24](end_span) -->
+ <script src="script.js"></script>
+ </body>
+ 
+ </html>

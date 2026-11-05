@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visi, Misi & Struktur - Ridho Pixel Works</title>
+    <!-- HTML Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- HTML CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="halaman-visi">
+
+    <!-- HEADER / HERO SECTION -->
+    <div id="header-web">
+        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
+        <h1>Ridho Pixel Works</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
+    </div>
+
+    <!-- NAVIGASI MENU DENGAN REVISI DROPDOWN[span_8](start_span)[span_8](end_span)[span_9](start_span)[span_9](end_span) -->
+    <div id="navigasi">
+        <ul class="menu-utama">
+            <li><a href="index.html">Home</a></li>
+            <li class="menu-dropdown">
+                <a href="#">About &#9662;</a>
+                <ul class="isi-dropdown">
+                    <li><a href="profil.html">Profil Studio</a></li>
+                    <li><a href="visi.html">Visi & Misi</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Beta Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- KONTEN UTAMA & SIDEBAR -->
+    <div id="wadah-konten">
+        
+        <!-- MAIN BODY (Kiri)[span_10](start_span)[span_10](end_span) -->
+        <div id="main-body" class="blok-layout">
+            <div class="artikel-post">
+                <h2 style="color: #e94560;">Visi dan Misi</h2>
+                
+                <!-- HTML Lists (Unordered List) -->
+                <ul style="line-height: 1.8; margin-bottom: 25px;">
+                    <li><strong>Visi:</strong> Menjadi pelopor studio game indie bernuansa budaya lokal dan kehidupan agrikultur di Indonesia.</li>
+                    <li><strong>Misi 1:</strong> Memproduksi aset <em>pixel art</em> 2D berkualitas tinggi dan membagikannya ke komunitas <em>open-source</em>.</li>
+                    <li><strong>Misi 2:</strong> Mengembangkan game simulasi pertanian yang ringan dan dapat dimainkan di berbagai platform, termasuk Linux.</li>
+                    <li><strong>Misi 3:</strong> Mengedukasi komunitas lokal tentang penggunaan Godot Engine (GDScript).</li>
+                </ul>
+
+                <h2 style="color: #e94560; border-top: 1px solid #0f3460; padding-top: 15px;">Struktur Organisasi</h2>
+                <p>Karena kami berjalan sebagai studio independen (Solo Dev), struktur organisasi dirancang secara efisien:</p>
+                
+                <!-- HTML Tables Dasar -->
+                <table width="100%" border="1" style="border-collapse: collapse; border-color: #0f3460; text-align: left; margin-top: 15px;">
+                    <tr style="background-color: #0f3460;">
+                        <th style="padding: 12px; color: white;">Jabatan (Role)</th>
+                        <th style="padding: 12px; color: white;">Nama Personel</th>
+                        <th style="padding: 12px; color: white;">Deskripsi Tugas</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px;">Founder & Lead Developer</td>
+                        <td style="padding: 12px;">Muhammad Ridho N. I.</td>
+                        <td style="padding: 12px;">Programming GDScript, merancang <em>gameplay</em>, dan manajemen proyek.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px;">Lead Pixel Artist</td>
+                        <td style="padding: 12px;">Muhammad Ridho N. I.</td>
+                        <td style="padding: 12px;">Mendesain karakter, <em>tileset</em>, UI, dan aset animasi menggunakan Pixelorama.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- SIDEBAR (Kanan)[span_11](start_span)[span_11](end_span) -->
+        <div id="sidebar" class="blok-layout">
+            <!-- Widget JS: Daily Loot Box -->
+            <div class="widget-kotak">
+                <h3>Daily Loot Box (JS Demo)</h3>
+                <p id="teks-loot">Ada satu peti aset pixel misterius yang belum kamu buka hari ini.</p>
+                <button id="tombol-loot" onclick="bukaLootBox()" class="tombol-baca" style="border: none; cursor: pointer;">Buka Peti Sekarang</button>
+            </div>
+
+            <div class="widget-kotak">
+                <h3>Developer Profile</h3>
+                <img src="assets/profile.jpg" alt="Muhammad Ridho" width="100%" height="auto" class="gambar-profil">
+                <p><strong>Muhammad Ridho N. I.</strong><br>Mahasiswa Ilmu Perpustakaan & Solo Developer.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER[span_12](start_span)[span_12](end_span) -->
+    <div id="footer-web">
+        <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
+        <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+</body>
+</html>

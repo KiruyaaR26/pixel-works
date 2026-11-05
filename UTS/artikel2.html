@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlog #2 - Ridho Pixel Works</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="halaman-artikel">
+
+    <div id="header-web">
+        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
+        <h1>Ridho Pixel Works</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
+    </div>
+
+    <!-- NAVIGASI MENU (HTML Lists, HTML Links, CSS Dropdown)[span_0](start_span)[span_0](end_span) -->
+    <div id="navigasi">
+        <ul class="menu-utama">
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="menu-dropdown">
+                <!-- REVISI 1: href diubah menjadi "#" agar tidak pindah halaman saat diklik -->
+                <a href="#">About &#9662;</a>
+                
+                <ul class="isi-dropdown">
+                    <!-- REVISI 2: Mengarah ke 2 file HTML yang terpisah -->
+                    <li><a href="profil.html">Profil Studio</a></li>
+                    <li><a href="visi.html">Visi & Misi</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Beta Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="wadah-konten">
+        <div id="main-body" class="blok-layout">
+            <div class="artikel-post">
+                <h2 style="color: #e94560;">Devlog #2: Logika Pergerakan GDScript Berbasis Grid</h2>
+                <p class="meta-teks">Ditulis oleh Muhammad Ridho pada 1 November 2026</p>
+                <hr style="border: 1px solid #0f3460; margin: 15px 0;">
+                
+                <!-- Gambar Artikel -->
+                <img src="assets/map1.jpg" alt="Sistem Grid Godot" class="gambar-artikel">
+
+                <p>Minggu ini saya fokus pada logika pergerakan pemain (player movement) di Godot Engine. Mengingat game ini berfokus pada aktivitas bertani yang presisi, pergerakan bebas (free movement) terasa kurang pas.</p>
+                
+                <p>Saya memutuskan menggunakan <strong>sistem pergerakan berbasis grid (Grid-based movement)</strong>. Saat pemain menekan tombol arah, karakter akan mengunci target koordinat tile selanjutnya dan berjalan ke sana dengan fungsi interpolasi agar gerakannya terlihat mulus (smooth).</p>
+
+                <p>Kode GDScript yang mengatur ini sangat sederhana berkat fungsi bawaan Vector2D di Godot. Langkah selanjutnya adalah menambahkan logika tabrakan (collision) agar pemain tidak menembus pohon atau pagar.</p>
+
+                <a href="index.html" class="tombol-baca">&laquo; Kembali ke Beranda</a>
+            </div>
+        </div>
+
+        <div id="sidebar" class="blok-layout">
+            <div class="widget-kotak">
+                <h3>Tools yang Digunakan</h3>
+                <ul>
+                    <li>Godot Engine</li>
+                    <li>Neovim (Scripting)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-web">
+        <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
+        <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+    </div>
+
+</body>
+</html>
