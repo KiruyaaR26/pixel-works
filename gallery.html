@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Ridho Pixel Works</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/lofo-uts.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body id="halaman-galeri">
+    <!-- top bar: logo di kiri dan navigasi di kanan -->
+    <div id="top-bar">
+        
+        <!-- bagian logo -->
+        <div class="logo-area">
+            <img src="assets/lofo-uts.svg" alt="logo ridho pixel" width="45" height="45">
+            <span class="brand-nama">PIXEL WORKS</span>
+        </div>
+        
+        <!-- bagian navigasi menu -->
+        <div id="navigasi">
+            <ul class="menu-utama">
+                <li><a href="index.html">Home</a></li>
+                <li class="menu-dropdown">
+                    <a href="#">About &#9662;</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="profil.html">Profil Studio</a></li>
+                        <li><a href="visi.html">Visi & Misi</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registration.html">Beta Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- pembersih float agar layout aman -->
+        <div style="clear: both;"></div> 
+    </div>
 
+    <!-- teks berjalan di bawah navigasi -->
+    <marquee class="teks-berjalan">
+        [UPDATE] Pendaftaran Beta Tester untuk game terbaru "Pixel Valley" telah dibuka! Silakan menuju menu Beta Registration.
+    </marquee>
+
+    <!-- hero section di bawah teks berjalan -->
     <div id="header-web">
-        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
-        <h1>Gallery & Karya</h1>
-        <p>Kumpulan Aset Pixel Art dan Screenshot Game</p>
+        <h1>RIDHO PIXEL WORKS</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
     </div>
-    <!-- NAVIGASI MENU (HTML Lists, HTML Links, CSS Dropdown)[span_0](start_span)[span_0](end_span) -->
-    <div id="navigasi">
-        <ul class="menu-utama">
-            <li><a href="index.html">Home</a></li>
-            
-            <li class="menu-dropdown">
-                <!-- REVISI 1: href diubah menjadi "#" agar tidak pindah halaman saat diklik -->
-                <a href="#">About &#9662;</a>
-                
-                <ul class="isi-dropdown">
-                    <!-- REVISI 2: Mengarah ke 2 file HTML yang terpisah -->
-                    <li><a href="profil.html">Profil Studio</a></li>
-                    <li><a href="visi.html">Visi & Misi</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="registration.html">Beta Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </div>
+
 
     <div id="wadah-konten">
         <div class="konten-penuh">
@@ -43,24 +57,23 @@
             <!-- Penggunaan CSS Block & Inline untuk Grid Galeri -->
             <div style="text-align: center;">
                 <div class="galeri-item">
-                    <img src="assets/crop1.jpg" alt="Aset Pertanian">
+                    <img src="assets/pertanian.jpg" alt="Aset Pertanian">
                     <p>Aset Tanaman (Crops)</p>
                 </div>
                 <div class="galeri-item">
-                    <img src="assets/char1.jpg" alt="Karakter Utama">
-                    <p>Animasi Karakter Utama</p>
+                    <img src="assets/karakter.jpg" alt="Karakter Utama">
+                    <p>Karakter Utama</p>
                 </div>
                 <div class="galeri-item">
-                    <img src="assets/ui1.jpg" alt="UI Game">
-                    <p>Desain UI Inventory</p>
+                    <img src="assets/ui.png" alt="UI Game">
                     <p>Desain UI Inventory</p>
                 </div>
                 <div class="galeri-item">
-                    <img src="assets/map1.jpg" alt="Tileset Desa">
+                    <img src="assets/map.png" alt="Tileset Desa">
                     <p>Tileset Desa & Tanah</p>
                 </div>
                 <div class="galeri-item">
-                    <img src="assets/tools1.jpg" alt="Alat Bertani">
+                    <img src="assets/tool.jpg" alt="Alat Bertani">
                     <p>Aset Alat Bertani</p>
                 </div>
             </div>

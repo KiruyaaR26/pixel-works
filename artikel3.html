@@ -4,31 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aset Gratis - Ridho Pixel Works</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/lofo-uts.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body id="halaman-artikel">
-
-    <div id="header-web">
-        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
-        <h1>Ridho Pixel Works</h1>
-        <p>Solo Indie Game Developer & Pixel Artist</p>
+    <!-- top bar: logo di kiri dan navigasi di kanan -->
+    <div id="top-bar">
+        
+        <!-- bagian logo -->
+        <div class="logo-area">
+            <img src="assets/lofo-uts.svg" alt="logo ridho pixel" width="45" height="45">
+            <span class="brand-nama">PIXEL WORKS</span>
+        </div>
+        
+        <!-- bagian navigasi menu -->
+        <div id="navigasi">
+            <ul class="menu-utama">
+                <li><a href="index.html">Home</a></li>
+                <li class="menu-dropdown">
+                    <a href="#">About &#9662;</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="profil.html">Profil Studio</a></li>
+                        <li><a href="visi.html">Visi & Misi</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registration.html">Beta Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- pembersih float agar layout aman -->
+        <div style="clear: both;"></div> 
     </div>
 
-    <div id="navigasi">
-        <ul class="menu-utama">
-            <li><a href="index.html">Home</a></li>
-            <li class="menu-dropdown">
-                <a href="about.html">About &#9662;</a>
-                <ul class="isi-dropdown">
-                    <li><a href="about.html#profil">Profil Studio</a></li>
-                    <li><a href="about.html#visi">Visi & Misi</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="registration.html">Beta Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+    <!-- teks berjalan di bawah navigasi -->
+    <marquee class="teks-berjalan">
+        [UPDATE] Pendaftaran Beta Tester untuk game terbaru "Pixel Valley" telah dibuka! Silakan menuju menu Beta Registration.
+    </marquee>
+
+    <!-- hero section di bawah teks berjalan -->
+    <div id="header-web">
+        <h1>RIDHO PIXEL WORKS</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
     </div>
 
     <div id="wadah-konten">
@@ -39,7 +57,7 @@
                 <hr style="border: 1px solid #0f3460; margin: 15px 0;">
                 
                 <!-- Gambar Artikel -->
-                <img src="assets/crop1.jpg" alt="Preview Aset Tanaman Gratis" class="gambar-artikel">
+                <img src="assets/tools.jpg" alt="Preview Aset Tanaman Gratis" class="gambar-artikel">
 
                 <p>Sebagai bentuk dedikasi dan rasa terima kasih untuk komunitas indie dev, hari ini saya merilis paket aset 16-bit tanaman (crops) secara gratis.</p>
                 
@@ -66,7 +84,7 @@
 
     <div id="footer-web">
         <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
-        <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+        <p><a href="https://github.com/KiruyaaR26">Official GitHub Link</a></p>
     </div>
 
 </body>

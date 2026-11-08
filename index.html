@@ -3,49 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ridho Pixel Works | Indie Studio</title>
-    <!-- HTML Favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <!-- HTML CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Ridho Pixel Works - Indie Studio</title>
+    <link rel="icon" href="/assets/lofo-uts.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
-<body id="halaman-utama">
+<body>
 
-    <!-- HEADER / HERO SECTION -->
-    <div id="header-web">
-        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
-        <h1>Ridho Pixel Works</h1>
-        <p>Solo Indie Game Developer & Pixel Artist</p>
+    <!-- top bar: logo di kiri dan navigasi di kanan -->
+    <div id="top-bar">
+        
+        <!-- bagian logo -->
+        <div class="logo-area">
+            <img src="assets/lofo-uts.svg" alt="logo ridho pixel" width="45" height="45">
+            <span class="brand-nama">PIXEL WORKS</span>
+        </div>
+        
+        <!-- bagian navigasi menu -->
+        <div id="navigasi">
+            <ul class="menu-utama">
+                <li><a href="index.html">Home</a></li>
+                <li class="menu-dropdown">
+                    <a href="#">About &#9662;</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="profil.html">Profil Studio</a></li>
+                        <li><a href="visi.html">Visi & Misi</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registration.html">Beta Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- pembersih float agar layout aman -->
+        <div style="clear: both;"></div> 
     </div>
 
-    <!-- NAVIGASI MENU (HTML Lists, HTML Links, CSS Dropdown) -->
-    <div id="navigasi">
-        <ul class="menu-utama">
-            <li><a href="index.html">Home</a></li>
-            <li class="menu-dropdown">
-                <!-- href diubah menjadi "#" agar tidak lompat halaman -->
-                <a href="#">About &#9662;</a>
-                <ul class="isi-dropdown">
-                    <!-- Link dropdown dipecah ke dua halaman terpisah -->
-                    <li><a href="profil.html">Profil Studio</a></li>
-                    <li><a href="visi.html">Visi & Misi</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="registration.html">Beta Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-
-    <!-- TULISAN BERJALAN -->
+    <!-- teks berjalan di bawah navigasi -->
     <marquee class="teks-berjalan">
         [UPDATE] Pendaftaran Beta Tester untuk game terbaru "Pixel Valley" telah dibuka! Silakan menuju menu Beta Registration.
     </marquee>
 
-    <!-- KONTEN UTAMA & SIDEBAR (HTML Block & Inline) -->
+    <!-- hero section di bawah teks berjalan -->
+    <div id="header-web">
+        <h1>RIDHO PIXEL WORKS</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
+    </div>
+
+    <!-- wadah konten utama -->
     <div id="wadah-konten">
         
-        <!-- MAIN BODY: 3 Artikel -->
+        <!-- konten kiri: daftar artikel -->
         <div id="main-body" class="blok-layout">
             
             <div class="artikel-post">
@@ -61,48 +69,42 @@
                 <p>Minggu ini saya fokus pada logika pergerakan pemain (player movement) di Godot Engine. Saya menggunakan sistem grid berbasis tile...</p>
                 <a href="artikel2.html" class="tombol-baca">Read More &raquo;</a>
             </div>
-
+            
             <div class="artikel-post">
-                <h2><a href="artikel3.html">Rilis Aset Pixel Art Gratis</a></h2>
-                <p class="meta-teks">Ditulis pada 28 Oktober 2026</p>
-                <p>Sebagai bentuk dedikasi untuk komunitas indie dev, saya membagikan paket aset 16-bit tanaman (crops) secara gratis untuk proyek komersial...</p>
+                <h2><a href="artikel2.html">Devlog #3: Logika Pergerakan GDScript</a></h2>
+                <p class="meta-teks">Ditulis pada 29 November 2026</p>
+                <p>Sebagai bentuk dedikasi dan rasa terima kasih untuk komunitas indie dev, hari ini saya merilis paket aset 16-bit tanaman (crops) secara gratis....</p>
                 <a href="artikel3.html" class="tombol-baca">Read More &raquo;</a>
             </div>
 
         </div>
 
-        <!-- SIDEBAR (Kanan) -->
+        <!-- konten kanan: sidebar -->
         <div id="sidebar" class="blok-layout">
             
-            <!-- Widget JS Dasar (Komentar sudah ditutup dengan benar) -->
             <div class="widget-kotak">
-                <h3>Daily Loot Box (JS Demo)</h3>
+                <h3>Daily Loot Box</h3>
                 <p id="teks-loot">Ada satu peti aset pixel misterius yang belum kamu buka hari ini.</p>
-                <button id="tombol-loot" onclick="bukaLootBox()" class="tombol-baca" style="border: none; cursor: pointer;">Buka Peti Sekarang</button>
+                <button id="tombol-loot" onclick="bukaLootBox()" class="btn" style="width: 100%;">Buka Peti</button>
             </div>
 
             <div class="widget-kotak">
                 <h3>Developer Profile</h3>
-                <img src="assets/profile.jpg" alt="Muhammad Ridho" width="100%" height="auto" class="gambar-profil">
-                <p><strong>Muhammad Ridho N. I.</strong><br>Mahasiswa Ilmu Perpustakaan & Pengembang Game Independen.</p>
-            </div>
-
-            <div class="widget-kotak">
-                <h3>Trailer Game</h3>
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Trailer Game" style="border:none;"></iframe>
+                <img src="assets/gw.jpg" alt="foto profil ridho" class="gambar-profil">
+                <p style="text-align: center; font-size: 14px;"><strong>Muhammad Ridho N. I.</strong><br>Mahasiswa & Indie Dev</p>
             </div>
 
         </div>
+        
+    </div> 
 
-    </div>
-
-    <!-- FOOTER -->
+    <!-- footer web -->
     <div id="footer-web">
         <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
-        <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+        <p><a href="https://github.com/KiruyaaR26">Official GitHub Link</a></p>
     </div>
 
-    <!-- Javascript File -->
-    <script src="script.js"></script>
+    <!-- memanggil javascript -->
+    <script src="/assets/script.js"></script>
 </body>
 </html>

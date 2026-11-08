@@ -3,50 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Registration - Ridho Pixel Works</title>
+  <link rel="icon" href="/assets/lofo-uts.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>
-    <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ridho Pixel Works | Indie Studio</title>
-    <!-- HTML Favicon[span_7](start_span)[span_7](end_span) -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <!-- HTML CSS[span_8](start_span)[span_8](end_span) -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body id="halaman-utama">
-    <!-- HEADER -->
-    <div id="header-web">
-        <img src="assets/logo.png" alt="Logo Ridho Pixel" width="80" height="80">
-        <h1>Ridho Pixel Works</h1>
-        <p>Solo Indie Game Developer & Pixel Artist</p>
-    </div>
-    <!-- NAVIGASI MENU (HTML Lists, HTML Links, CSS Dropdown)[span_0](start_span)[span_0](end_span) -->
-    <div id="navigasi">
-        <ul class="menu-utama">
-            <li><a href="index.html">Home</a></li>
-            
-            <li class="menu-dropdown">
-                <!-- REVISI 1: href diubah menjadi "#" agar tidak pindah halaman saat diklik -->
-                <a href="#">About &#9662;</a>
-                
-                <ul class="isi-dropdown">
-                    <!-- REVISI 2: Mengarah ke 2 file HTML yang terpisah -->
-                    <li><a href="profil.html">Profil Studio</a></li>
-                    <li><a href="visi.html">Visi & Misi</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="registration.html">Beta Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+    <!-- top bar: logo di kiri dan navigasi di kanan -->
+    <div id="top-bar">
+        
+        <!-- bagian logo -->
+        <div class="logo-area">
+            <img src="assets/lofo-uts.svg" alt="logo ridho pixel" width="45" height="45">
+            <span class="brand-nama">PIXEL WORKS</span>
+        </div>
+        
+        <!-- bagian navigasi menu -->
+        <div id="navigasi">
+            <ul class="menu-utama">
+                <li><a href="index.html">Home</a></li>
+                <li class="menu-dropdown">
+                    <a href="#">About &#9662;</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="profil.html">Profil Studio</a></li>
+                        <li><a href="visi.html">Visi & Misi</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registration.html">Beta Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- pembersih float agar layout aman -->
+        <div style="clear: both;"></div> 
     </div>
 
+    <!-- teks berjalan di bawah navigasi -->
+    <marquee class="teks-berjalan">
+        [UPDATE] Pendaftaran Beta Tester untuk game terbaru "Pixel Valley" telah dibuka! Silakan menuju menu Beta Registration.
+    </marquee>
+
+    <!-- hero section di bawah teks berjalan -->
+    <div id="header-web">
+        <h1>RIDHO PIXEL WORKS</h1>
+        <p>Solo Indie Game Developer & Pixel Artist</p>
+    </div>
     <div id="wadah-konten">
         <div class="konten-penuh">
             <h2 style="color: #e94560;">Pendaftaran Beta Tester Game "Pixel Valley"</h2>
@@ -72,11 +74,11 @@
     </div>
     <div id="footer-web">
         <p>&copy; 2026 Ridho Pixel Works. Desain oleh Muhammad Ridho Nur Islam.</p>
-        <p><a href="https://github.com/ridho-pixel">Official GitHub Link</a></p>
+        <p><a href="https://github.com/KiruyaaR26">Official GitHub Link</a></p>
     </div>
 
     <!-- Javascript File[span_24](start_span)[span_24](end_span) -->
-    <script src="script.js"></script>
+    <script src="/assets/script.js"></script>
 </body>
 
 </html>

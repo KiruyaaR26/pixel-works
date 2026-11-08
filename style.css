@@ -1,6 +1,4 @@
-/* =========================================
-   RESET & BASE STYLES (Performance & SEO Optimized)
-   ========================================= */
+/* reset dasar */
 * {
     box-sizing: border-box;
 }
@@ -8,222 +6,332 @@
 body {
     margin: 0;
     padding: 0;
-    /* Menggunakan font sistem agar load time 0ms (Mendukung Performance 100%) */
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #0f172a; /* Slate Dark / Court Background */
-    color: #f8fafc; /* High contrast text untuk Accessibility 100% */
-    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0d1117; 
+    color: #c9d1d9;
+    line-height: 1.7;
 }
 
-/* =========================================
-   1. NAVIGATION (#satu & .dua)
-   ========================================= */
-#satu {
-    background-color: #1e293b;
-    padding: 10px 20px;
-    text-align: center;
-    border-bottom: 3px solid #22c55e; /* Aksi hijau lapangan */
+/* tipografi judul */
+h1, h2, h3 {
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.dua {
+/* top bar berisi logo dan menu */
+#top-bar {
+    background-color: #161b22;
+    border-bottom: 2px solid #30363d;
+    width: 100%; 
+}
+
+/* area logo di kiri */
+.logo-area {
+    float: left;
+    padding: 12px 20px;
+}
+
+.logo-area img {
+    vertical-align: middle; 
+    margin-right: 10px;
+    border: 2px solid #8b949e; 
+    background-color: #0d1117;
+}
+
+.brand-nama {
+    color: #58a6ff;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* area menu di kanan */
+#navigasi {
+    float: right; 
+}
+
+.menu-utama {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.dua li {
+.menu-utama li {
     display: inline-block;
     position: relative;
 }
 
-.dua li a {
+.menu-utama li a {
     display: block;
-    padding: 12px 20px;
-    color: #f8fafc;
+    color: #c9d1d9;
+    padding: 21px 24px; 
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid #30363d; 
 }
 
-.dua li a:hover, .dua li a:focus {
-    background-color: #22c55e;
-    color: #0f172a;
-    border-radius: 4px;
+.menu-utama li a:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
 }
 
-/* Dropdown Menu */
-.dropdown {
+/* menu dropdown */
+.isi-dropdown {
     display: none;
     position: absolute;
-    background-color: #1e293b;
+    top: 100%; 
+    right: 0; 
+    background-color: #161b22;
     min-width: 200px;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    border: 1px solid #334155;
+    border: 2px solid #58a6ff;
+    box-shadow: 6px 6px 0px #58a6ff; 
     z-index: 99;
     text-align: left;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
-.dropdown li {
+.isi-dropdown li {
     display: block;
 }
 
-.dropdown li a {
-    padding: 12px 16px;
-    color: #f8fafc;
+.isi-dropdown li a {
+    border-bottom: 1px solid #30363d;
+    padding: 15px;
+    border-left: none; 
 }
 
-.dropdown li a:hover {
-    background-color: #22c55e;
-    color: #0f172a;
-}
-
-.dropdown-container:hover .dropdown {
+.menu-dropdown:hover .isi-dropdown {
     display: block;
 }
 
-/* =========================================
-   2. TEKS BERJALAN (.text)
-   ========================================= */
-.text {
-    background-color: #22c55e;
-    color: #0f172a;
-    padding: 10px;
-    font-weight: bold;
-    outline: 2px dashed #ffffff;
-    outline-offset: -3px;
-}
-
-/* =========================================
-   3. HERO SECTION (#tiga)
-   ========================================= */
-#tiga {
-    background-color: #1e293b;
-    /* Pastikan gambar latar sudah dikompres agar performa 100% */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('images/md.jpeg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
-    border-bottom: 4px solid #22c55e;
-}
-
-#tiga h1 {
-    font-size: 42px;
-    margin: 0;
+/* teks berjalan */
+.teks-berjalan {
+    background-color: #238636; 
     color: #ffffff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    letter-spacing: 1px;
+    padding: 12px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-bottom: 2px solid #2ea043;
+    display: block; 
 }
 
-/* =========================================
-   4. LAYOUT UTAMA (#main, #left, #right)
-   ========================================= */
-#main {
-    max-width: 1150px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* hero section di bawah marquee */
+#header-web {
+    background-color: #0d1117; 
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 4px solid #58a6ff; 
 }
 
-#left, #right {
+#header-web h1 {
+    color: #58a6ff; 
+    font-size: 54px; 
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 5px 5px 0px #1f6feb; 
+}
+
+#header-web p {
+    font-size: 20px;
+    color: #8b949e;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+}
+
+/* tata letak pembagian kolom */
+#wadah-konten {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.blok-layout {
     display: inline-block;
     vertical-align: top;
 }
 
-#left {
-    width: 67%; 
-    margin-right: 2%;  
+#main-body {
+    width: 66%;
+    margin-right: 3%; 
 }
 
-#right {
-    width: 31%; 
+#sidebar {
+    width: 30%;
 }
 
-/* =========================================
-   5. KOTAK KONTEN (.enam, .delapan)
-   ========================================= */
-.enam, .delapan {
-    background-color: #1e293b; 
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    border: 1px solid #334155; 
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+/* kotak artikel dan widget */
+.artikel-post, .widget-kotak {
+    background-color: #0d1117;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 2px solid #30363d;
+    border-radius: 0; 
+    box-shadow: 8px 8px 0px #161b22; 
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.enam h2, .delapan h2 {
-    color: #22c55e;
-    border-bottom: 2px solid #334155;
+.artikel-post:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 11px 11px 0px #30363d;
+    border-color: #8b949e;
+}
+
+.artikel-post h2 a {
+    color: #c9d1d9;
+    text-decoration: none;
+}
+
+.artikel-post h2 a:hover {
+    color: #58a6ff;
+}
+
+.meta-teks {
+    font-size: 13px;
+    color: #8b949e;
+    border-left: 3px solid #58a6ff;
+    padding-left: 10px;
+}
+
+.widget-kotak h3 {
+    color: #58a6ff;
+    border-bottom: 2px dashed #30363d;
     padding-bottom: 10px;
-    margin-top: 0;
-    font-size: 20px;
 }
 
-/* =========================================
-   6. TOMBOL & FORM (.btn)
-   ========================================= */
-.btn {
+/* gaya tombol dan input submit */
+.tombol-baca, .btn, input[type="submit"], button[type="submit"] {
     display: inline-block;
+    background-color: #0d1117;
+    color: #58a6ff;
+    padding: 12px 25px;
     text-decoration: none;
-    background-color: #22c55e;  
-    color: #0f172a;
-    padding: 12px 24px;
-    border-radius: 6px;
-    margin-top: 15px;
     font-weight: bold;
-    transition: background-color 0.2s;
+    border: 2px solid #58a6ff;
+    box-shadow: 4px 4px 0px #58a6ff; 
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    transition: transform 0.1s, box-shadow 0.1s;
+    cursor: pointer;
+    appearance: none; 
+    -webkit-appearance: none;
 }
 
-.btn:hover, .btn:focus {
-    background-color: #16a34a;
-    color: #ffffff;
+.tombol-baca:hover, .btn:hover, input[type="submit"]:hover, button[type="submit"]:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
 }
 
-input[type="text"], input[type="date"], select, textarea {
+.tombol-baca:active, .btn:active, input[type="submit"]:active, button[type="submit"]:active {
+    transform: translate(4px, 4px); 
+    box-shadow: 0px 0px 0px #58a6ff; 
+}
+
+/* form input pendaftaran */
+input[type=text], input[type=email], input[type=date], select, textarea {
     width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    background-color: #0f172a;
+    padding: 15px;
+    border: 2px solid #30363d;
+    border-radius: 0;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: #0d1117;
     color: #f8fafc;
-    border: 1px solid #334155;
-    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace; 
+    transition: all 0.2s;
 }
-
+    
 input:focus, select:focus, textarea:focus {
-    outline: 2px solid #22c55e;
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 4px 4px 0px #58a6ff; 
 }
 
-/* =========================================
-   7. FOOTER (.footer)
-   ========================================= */
-.footer {
-    background-color: #1e293b;
-    color: #f8fafc;
-    text-align: center;
-    padding: 25px;
-    border-top: 4px solid #22c55e;
+/* gambar profil dan artikel */
+.gambar-profil {
+    border: 2px solid #8b949e;
     width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 6px 6px 0px #30363d;
+}
+
+.gambar-artikel {
+    border: 2px solid #30363d;
+    box-shadow: 4px 4px 0px #161b22;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* gaya footer */
+#footer-web {
+    background-color: #161b22;
+    text-align: center;
+    padding: 30px;
     margin-top: 60px;
+    border-top: 2px solid #30363d;
+    width: 100%;
+    clear: both;
 }
 
-.footer a {
-    color: #22c55e;
-    text-decoration: none;
+#footer-web p {
+    color: #8b949e;
+    font-family: "Courier New", Courier, monospace;
+    margin: 5px 0;
+}
+
+#footer-web a {
+    color: #58a6ff;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.konten-penuh {
+    background-color: #0d1117;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 2px solid #30363d;
+    box-shadow: 8px 8px 0px #161b22; 
 }
 
-/* Responsive Fix untuk Mobile */
-@media (max-width: 768px) {
-    #left, #right {
-        width: 100%;
-        margin-right: 0;
-    }
+/* Membagi galeri menjadi 3 kolom sejajar */
+.galeri-item {
+    display: inline-block;
+    width: 30%; 
+    margin: 1%;
+    background-color: #161b22;
+    border: 2px solid #30363d;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    box-shadow: 4px 4px 0px #58a6ff; /* Bayangan kotak tegas */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.galeri-item:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #58a6ff;
+}
+
+/* KUNCI MEMPERBAIKI GAMBAR BOCOR */
+.galeri-item img {
+    width: 100%; /* Memaksa gambar tidak melebihi kotak */
+    height: auto; /* Proporsi gambar tetap terjaga */
+    border: 2px solid #30363d;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.galeri-item p {
+    font-family: "Courier New", Courier, monospace;
+    color: #c9d1d9;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    font-size: 14px;
 }

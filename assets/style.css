@@ -1,0 +1,337 @@
+/* reset dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0d1117; 
+    color: #c9d1d9;
+    line-height: 1.7;
+}
+
+/* tipografi judul */
+h1, h2, h3 {
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* top bar berisi logo dan menu */
+#top-bar {
+    background-color: #161b22;
+    border-bottom: 2px solid #30363d;
+    width: 100%; 
+}
+
+/* area logo di kiri */
+.logo-area {
+    float: left;
+    padding: 12px 20px;
+}
+
+.logo-area img {
+    vertical-align: middle; 
+    margin-right: 10px;
+    border: 2px solid #8b949e; 
+    background-color: #0d1117;
+}
+
+.brand-nama {
+    color: #58a6ff;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* area menu di kanan */
+#navigasi {
+    float: right; 
+}
+
+.menu-utama {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-utama li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-utama li a {
+    display: block;
+    color: #c9d1d9;
+    padding: 21px 24px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid #30363d; 
+}
+
+.menu-utama li a:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+/* menu dropdown */
+.isi-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background-color: #161b22;
+    min-width: 200px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #58a6ff;
+    box-shadow: 6px 6px 0px #58a6ff; 
+    z-index: 99;
+    text-align: left;
+}
+
+.isi-dropdown li {
+    display: block;
+}
+
+.isi-dropdown li a {
+    border-bottom: 1px solid #30363d;
+    padding: 15px;
+    border-left: none; 
+}
+
+.menu-dropdown:hover .isi-dropdown {
+    display: block;
+}
+
+/* teks berjalan */
+.teks-berjalan {
+    background-color: #238636; 
+    color: #ffffff;
+    padding: 12px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-bottom: 2px solid #2ea043;
+    display: block; 
+}
+
+/* hero section di bawah marquee */
+#header-web {
+    background-color: #0d1117; 
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 4px solid #58a6ff; 
+}
+
+#header-web h1 {
+    color: #58a6ff; 
+    font-size: 54px; 
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 5px 5px 0px #1f6feb; 
+}
+
+#header-web p {
+    font-size: 20px;
+    color: #8b949e;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+}
+
+/* tata letak pembagian kolom */
+#wadah-konten {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.blok-layout {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main-body {
+    width: 66%;
+    margin-right: 3%; 
+}
+
+#sidebar {
+    width: 30%;
+}
+
+/* kotak artikel dan widget */
+.artikel-post, .widget-kotak {
+    background-color: #0d1117;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 2px solid #30363d;
+    border-radius: 0; 
+    box-shadow: 8px 8px 0px #161b22; 
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.artikel-post:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 11px 11px 0px #30363d;
+    border-color: #8b949e;
+}
+
+.artikel-post h2 a {
+    color: #c9d1d9;
+    text-decoration: none;
+}
+
+.artikel-post h2 a:hover {
+    color: #58a6ff;
+}
+
+.meta-teks {
+    font-size: 13px;
+    color: #8b949e;
+    border-left: 3px solid #58a6ff;
+    padding-left: 10px;
+}
+
+.widget-kotak h3 {
+    color: #58a6ff;
+    border-bottom: 2px dashed #30363d;
+    padding-bottom: 10px;
+}
+
+/* gaya tombol dan input submit */
+.tombol-baca, .btn, input[type="submit"], button[type="submit"] {
+    display: inline-block;
+    background-color: #0d1117;
+    color: #58a6ff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #58a6ff;
+    box-shadow: 4px 4px 0px #58a6ff; 
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    transition: transform 0.1s, box-shadow 0.1s;
+    cursor: pointer;
+    appearance: none; 
+    -webkit-appearance: none;
+}
+
+.tombol-baca:hover, .btn:hover, input[type="submit"]:hover, button[type="submit"]:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+.tombol-baca:active, .btn:active, input[type="submit"]:active, button[type="submit"]:active {
+    transform: translate(4px, 4px); 
+    box-shadow: 0px 0px 0px #58a6ff; 
+}
+
+/* form input pendaftaran */
+input[type=text], input[type=email], input[type=date], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #30363d;
+    border-radius: 0;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: #0d1117;
+    color: #f8fafc;
+    font-family: "Courier New", Courier, monospace; 
+    transition: all 0.2s;
+}
+    
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 4px 4px 0px #58a6ff; 
+}
+
+/* gambar profil dan artikel */
+.gambar-profil {
+    border: 2px solid #8b949e;
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 6px 6px 0px #30363d;
+}
+
+.gambar-artikel {
+    border: 2px solid #30363d;
+    box-shadow: 4px 4px 0px #161b22;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* gaya footer */
+#footer-web {
+    background-color: #161b22;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    border-top: 2px solid #30363d;
+    width: 100%;
+    clear: both;
+}
+
+#footer-web p {
+    color: #8b949e;
+    font-family: "Courier New", Courier, monospace;
+    margin: 5px 0;
+}
+
+#footer-web a {
+    color: #58a6ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.konten-penuh {
+    background-color: #0d1117;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 2px solid #30363d;
+    box-shadow: 8px 8px 0px #161b22; 
+}
+
+/* Membagi galeri menjadi 3 kolom sejajar */
+.galeri-item {
+    display: inline-block;
+    width: 30%; 
+    margin: 1%;
+    background-color: #161b22;
+    border: 2px solid #30363d;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    box-shadow: 4px 4px 0px #58a6ff; /* Bayangan kotak tegas */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.galeri-item:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #58a6ff;
+}
+
+/* KUNCI MEMPERBAIKI GAMBAR BOCOR */
+.galeri-item img {
+    width: 100%; /* Memaksa gambar tidak melebihi kotak */
+    height: auto; /* Proporsi gambar tetap terjaga */
+    border: 2px solid #30363d;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.galeri-item p {
+    font-family: "Courier New", Courier, monospace;
+    color: #c9d1d9;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
